@@ -1,0 +1,98 @@
+@charset "utf-8";
+* { padding: 0; margin: 0;}
+body { font-family: "微软雅黑", "宋体", Arial; font-size: 12px; color: #333;}
+li { list-style: none;}
+a { text-decoration: none;}
+img { border: none; display: block;}
+button {cursor: pointer; font-family:"微软雅黑";}
+.pt_150 { padding-top: 150px;}
+
+.wrap { width: 800px; height: 628px; overflow: hidden; background: url(/assets/_bg.jpg) no-repeat;}
+.h_ky, .h_math, .h_English, .h_politics {width: 560px; height: 65px; overflow: hidden; text-indent: -999px; margin: 90px 0 0 170px;}
+.h_ky { background: url(/assets/h_title.png) no-repeat 0 0;}
+.h_math { background: url(/assets/h_title.png) no-repeat 0 -72px;}
+.h_english { background: url(/assets/h_title.png) no-repeat 0 -136px;}
+.h_politics { background: url(/assets/h_title.png) no-repeat 0 -204px;}
+
+.ad_1 { width: 750px; height: 100px; margin: 80px auto;}
+
+.btn_box { width: 276px; margin: 0 auto;}
+.b_btn { 
+    width: 270px; 
+	height: 78px; 
+	border: 3px #ac1462 solid; 
+	border-radius: 0.3em; 
+	background: #dc1c7e; 
+	font-size: 40px; 
+	font-weight: bolder; 
+	color: #FFF; 
+	text-align: center;
+	box-shadow: -2px 2px #186da0;
+}
+.see_btn {
+	width: 270px; 
+	height: 78px; 
+	border: 3px #1f94d9 solid; 
+	border-radius: 0.3em; 
+	background: #fffbfc; 
+	font-size: 40px; 
+	font-weight: bolder; 
+	color: #134b84; 
+	text-align: center;
+	box-shadow: -2px 2px #186da0;
+}
+.j_btn_box { width: 356px; margin: 0 auto;}
+.join_btn {
+	width: 350px; 
+	height: 78px; 
+	border: 3px #1f94d9 solid; 
+	border-radius: 0.3em; 
+	background: #fffbfc; 
+	font-size: 40px; 
+	font-weight: bolder; 
+	color: #134b84; 
+	text-align: center;
+	box-shadow: -2px 2px #186da0;
+}
+
+.exam { width: 640px; height: 414px; overflow: hidden; padding:0 80px; margin-top: 20px; background: #124c83;}
+
+
+.q_list { font-size: 24px; line-height: 36px; color: #FFF; padding: 20px 0; height: 150px;}
+.q_ul { line-height: 36px; font-size: 18px; color: #FFF; height: 180px; display: block; overflow: hidden;}
+.q_ul li { padding-left: 35px; cursor: pointer;}
+.q_ul li:hover { text-decoration: underline;}
+.q_ul li.dui { background: url(/assets/dui.png) no-repeat 0 5px;}
+
+.pn_btn_box { width: 400px; margin: 0 auto; overflow: hidden;}
+.prev_btn, .next_btn { padding: 5px 20px; border: 3px #ac1363 solid; border-radius: 0.5em; background: #FFF; }
+.prev_btn:hover, .next_btn:hover { box-shadow: 2px 2px 1px #186da0,-2px -2px 1px #186da0;}
+.prev_btn { float: left;}
+.next_btn { float: right;}
+
+.jindu { height: 6px; padding: 5px 0; background: #dc1c7f; overflow: hidden;}
+.jd { height: 6px; background: #f9f0df; overflow: hidden;}
+
+.gz_box { width: 220px; margin: 50px auto; overflow: hidden;}
+.gz_icon li { float: left; margin: 0 5px;}
+
+.con_list { color: #FFF; margin: 30px 0; overflow: hidden;}
+.user_info { float: left; width: 87px; margin-right: 23px;}
+.user_info_img { width: 85px; height: 85px; border: 2px #a9dbf2 solid;}
+.user_info h1 { text-align: center; padding: 5px 0;}
+
+.user_con { float: left; width: 470px; height: 135px; background: url(/assets/user_bg.jpg) no-repeat; padding: 12px 30px;}
+.user_con span { font-size: 30px; padding: 0 8px;}
+.user_con span.f_50 { font-size: 50px; font-weight: bolder;}
+.user_con h1 { font-size: 38px; font-weight: bolder; text-align: center; 
+text-shadow: 4px 0px 2px #2193d9,
+-4px 0px 2px #2193d9,
+0px 4px 2px #2193d9,
+0px -4px 2px #2193d9;
+filter: Glow(Color=#2193d9, Strength=3);
+}
+
+.yellow_h {font-size: 35px; font-weight: bolder; text-align: center; color: #fdf6c2;}
+
+.checkbox { padding-left: 220px; margin: 10px 0; line-height: 18px; color: #09F;}
+
