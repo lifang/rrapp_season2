@@ -1,12 +1,6 @@
-function show_result() {
-    var result_url = "/quesions/result";
-    if ($("#share").attr("checked") == "checked") {
-        result_url += "?share=1";
-    }
-    window.location.href = result_url;
-}
 var curr=null;
-function changeCss(n) {
+function changeCss(n)
+{
     if (n==1) {
         $('h1').removeClass();
         $('h1').addClass("h_title");
@@ -23,13 +17,16 @@ function changeCss(n) {
         $('h1').addClass("h_math");
     }
 }
-function nextStep() {
-    if(curr!=null) {
+function nextStep()
+{
+    if(curr!=null)
+    {
         $('#divstep'+curr.toString()).hide();
         curr++;
-        if(curr<7) {
+        if(curr<7){
             $('#divstep'+curr.toString()).show();
-        }  else {
+        }
+        else{
             //转向分享页
             window.location.href="/questions/share";
         }
@@ -60,7 +57,7 @@ $(function(){
     $("div[id*='divstep']").hide();
     nextStep();
 
-    $(".next_btn").bind("click",function(){
+    $(".next_btn").bind("click",function(){      
         nextStep();
         progress();
     });
@@ -75,3 +72,6 @@ $(function(){
         $(this).toggleClass("dui");
     });
 })
+
+
+
