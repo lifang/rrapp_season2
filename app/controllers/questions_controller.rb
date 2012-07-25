@@ -1,9 +1,6 @@
 # encoding: utf-8
 class QuestionsController < ApplicationController
-
-
-  def share
+  def result
     
-  end
-  
+  end  
 end
