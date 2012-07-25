@@ -25,8 +25,13 @@ function nextStep()
     {
         $('#divstep'+curr.toString()).hide();
         curr++;
-        $('#divstep'+curr.toString()).show();
-
+        if(curr<7){
+            $('#divstep'+curr.toString()).show();
+        }
+        else{
+            //转向分享页
+            window.location.href="/questions/share";
+        }
     }else{
         $('#divstep1').show();
         curr=1;
@@ -46,8 +51,8 @@ function prevStep(){
     changeCss(curr);
 }
 function progress(){
-   var p=parseInt((curr/6)*100);
-   $("div.jd").css("width",p.toString()+"%")
+    var p=parseInt((curr/6)*100);
+    $("div.jd").css("width",p.toString()+"%")
 }
 
 $(function(){
