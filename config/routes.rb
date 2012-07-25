@@ -1,4 +1,10 @@
 RrappSeason2::Application.routes.draw do
+
+  resources :logins do
+    collection do
+      get :get_info,:get_callback
+    end
+  end
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -21,6 +27,7 @@ RrappSeason2::Application.routes.draw do
 
 
   match "/question", :to=>"questions#question"
+  match "/result", :to=>"questions#result"
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.

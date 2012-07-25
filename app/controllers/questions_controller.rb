@@ -1,6 +1,12 @@
 # encoding: utf-8
 class QuestionsController < ApplicationController
-  def result
+
+  def index
+    @client_id="196777"
+  end
+
+  def share
     
-  end  
+  end
+
 end
