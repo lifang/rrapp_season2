@@ -8,6 +8,6 @@ class LoginsController < ApplicationController
   end
 
   def get_callback
-   render :inline=>"<script type='text/javascript'>var p = window.location.href.split('#');var pr = p.length>1 ? p[1] : '';window.location.href = '/logins/get_info?'+pr;</script>"
+    render :inline=>"<script type='text/javascript'>var p = window.location.href.split('#');window.location.href = '/logins/get_info?'+p.length>1 ? p[1] : '';</script>"
   end
 end
