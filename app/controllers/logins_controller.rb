@@ -4,7 +4,6 @@ class LoginsController < ApplicationController
 
   def get_info
     session[:user_info]=renren_get_user(params[:access_token])
-    p session[:user_info]
     render :inline=>"response"
   end
 
