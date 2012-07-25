@@ -1,2 +1,30 @@
+
+      <%= javascript_include_tag "renren" %>
+      <% unless params[:xn_sig_added]=="1" %>
+          <script type="text/javascript" src="/assets/renren.js"></script>
+          <div id="hidden_iframe" style="display:none;">
+            <script type="text/javascript">
+              var uiOpts = {
+                url : "http://graph.renren.com/oauth/authorize",
+                display : "iframe",
+                params : {"response_type":"token","client_id":"<%= @client_id %>","scope":"publish_feed publish_share operate_like status_update"},
+                onSuccess: function(r){
+                  window.location = "http://localhost:3000/logins/get_info?access_token="+escape(r.access_token);
+                }
+              };
+              var root_flag = 0;
+              Renren.ui(uiOpts);
+            </script>
+          </div>
+        <% else %>
+          <script type="text/javascript">
+            $(function(){
+              setTimeout(function(){
+                window.location.href = "http://graph.renren.com/oauth/authorize?display=iframe&response_type=token&client_id=<%= @client_id %>&redirect_uri=http://localhost:3000/logins/get_callback";
+              },1500)
+            })
+          </script>
+        <% end %>
+<h1 class="h_title h_ky">来预测你的考研成绩吧！</h1>
 <div class="ad_1"><img src="/assets/ad_1.png"/></div>
 <div class="btn_box"><button class="b_btn">开始测试</button></div>

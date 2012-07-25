@@ -1,4 +1,10 @@
 RrappSeason2::Application.routes.draw do
+
+  resources :logins do
+    collection do
+      get :get_info,:get_callback
+    end
+  end
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
