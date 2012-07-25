@@ -79,7 +79,7 @@ button {cursor: pointer; font-family:"微软雅黑";}
 
 .con_list { color: #FFF; margin: 30px 0; overflow: hidden;}
 .user_info { float: left; width: 87px; margin-right: 23px;}
-.user_info_img { width: 85px; height: 85px; border: 2px #a9dbf2 solid;}
+.user_info_img { width: 100px; height: 98px; border: 2px #a9dbf2 solid;}
 .user_info h1 { text-align: center; padding: 5px 0;}
 
 .user_con { float: left; width: 470px; height: 135px; background: url(/assets/user_bg.jpg) no-repeat; padding: 12px 30px;}

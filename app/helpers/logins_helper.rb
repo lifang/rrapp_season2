@@ -28,7 +28,7 @@ module LoginsHelper
   #
   #人人获取用户信息
   def renren_get_user(access_token)
-    query = {:access_token => access_token,:format => 'JSON',:method => 'xiaonei.users.getInfo',:v => '1.0',:field=>"uid,name,university_history,headurl"}
+    query = {:access_token => access_token,:format => 'JSON',:method => 'xiaonei.users.getInfo',:v => '1.0',:fields=>"uid,name,university_history,headurl"}
     request = renren_sig_request(query)
     response = JSON renren_api(request)
   end

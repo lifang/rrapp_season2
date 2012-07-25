@@ -1,3 +1,4 @@
+
 var curr=null;
 function changeCss(n)
 {
@@ -57,7 +58,7 @@ $(function(){
     $("div[id*='divstep']").hide();
     nextStep();
 
-    $(".next_btn").bind("click",function(){      
+    $(".next_btn").bind("click",function(){
         nextStep();
         progress();
     });
@@ -72,6 +73,3 @@ $(function(){
         $(this).toggleClass("dui");
     });
 })
-
-
-
