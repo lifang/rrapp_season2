@@ -5,7 +5,7 @@ li { list-style: none;}
 a { text-decoration: none;}
 img { border: none; display: block;}
 button {cursor: pointer; font-family:"微软雅黑";}
-.pt_150 { padding-top: 150px;}
+.pt_100 { padding-top: 100px;}
 
 .wrap { width: 800px; height: 628px; overflow: hidden; background: url(/assets/_bg.jpg) no-repeat;}
 .h_ky, .h_math, .h_English, .h_politics {width: 560px; height: 65px; overflow: hidden; text-indent: -999px; margin: 90px 0 0 170px;}
@@ -73,7 +73,8 @@ button {cursor: pointer; font-family:"微软雅黑";}
 .jindu { height: 6px; padding: 5px 0; background: #dc1c7f; overflow: hidden;}
 .jd { height: 6px; background: #f9f0df; overflow: hidden;}
 
-.gz_box { width: 220px; margin: 50px auto; overflow: hidden;}
+.gz_box { width: 320px; margin: 0px auto; overflow: hidden; color: #fff; position: relative;}
+.gz_mask { width: 320px; height: 35px; background: #124C83; position: absolute; top: 58px; left: 0;}
 .gz_icon li { float: left; margin: 0 5px;}
 
 .con_list { color: #FFF; margin: 30px 0; overflow: hidden;}
@@ -94,5 +95,5 @@ filter: Glow(Color=#2193d9, Strength=3);
 
 .yellow_h {font-size: 35px; font-weight: bolder; text-align: center; color: #fdf6c2;}
 
-.checkbox { padding-left: 220px; margin: 10px 0; line-height: 18px; color: #09F;}
+.checkbox { padding-left: 220px; margin: 10px 0; line-height: 18px; color: #005EAC;}
 
