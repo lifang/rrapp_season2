@@ -19,7 +19,7 @@ RrappSeason2::Application.routes.draw do
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   resources :questions do
     collection do
-      get :share, :question, :result
+      get :share, :result, :question
     end
   end
 
