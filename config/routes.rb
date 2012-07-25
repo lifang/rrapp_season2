@@ -11,7 +11,11 @@ RrappSeason2::Application.routes.draw do
   # This route can be invoked with purchase_url(:id => product.id)
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
-  resources :questions
+  resources :questions do
+    collection do
+      get :share
+    end
+  end
 
    root :to => 'questions#index'
 
