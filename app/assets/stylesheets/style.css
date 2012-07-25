@@ -8,7 +8,7 @@ button {cursor: pointer; font-family:"微软雅黑";}
 .pt_150 { padding-top: 150px;}
 
 .wrap { width: 800px; height: 628px; overflow: hidden; background: url(/assets/_bg.jpg) no-repeat;}
-.h_ky, .h_math, .h_English, .h_politics {width: 560px; height: 65px; overflow: hidden; text-indent: -999px; margin: 90px 0 0 170px;}
+.h_ky, .h_math, .h_english, .h_politics {width: 560px; height: 65px; overflow: hidden; text-indent: -999px; margin: 90px 0 0 170px;}
 .h_ky { background: url(/assets/h_title.png) no-repeat 0 0;}
 .h_math { background: url(/assets/h_title.png) no-repeat 0 -72px;}
 .h_english { background: url(/assets/h_title.png) no-repeat 0 -136px;}
