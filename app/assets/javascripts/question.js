@@ -17,8 +17,6 @@ function changeCss(n)
         $('h1').addClass("h_math");
     }
 }
-
-
 function nextStep()
 {
     if(curr!=null)
