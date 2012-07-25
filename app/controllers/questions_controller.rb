@@ -5,5 +5,8 @@ class QuestionsController < ApplicationController
   def share
     
   end
-  
+
+  def result
+    
+  end
 end

@@ -13,7 +13,7 @@ RrappSeason2::Application.routes.draw do
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   resources :questions do
     collection do
-      get :share
+      get :share, :question, :result
     end
   end
 
@@ -21,6 +21,7 @@ RrappSeason2::Application.routes.draw do
 
 
   match "/question", :to=>"questions#question"
+  match "/result", :to=>"questions#result"
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
