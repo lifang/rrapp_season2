@@ -4,4 +4,9 @@ class QuestionsController < ApplicationController
   def index
     @client_id="196777"
   end
+
+  def share
+    
+  end
+  
 end

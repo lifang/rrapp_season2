@@ -17,10 +17,16 @@ RrappSeason2::Application.routes.draw do
   # This route can be invoked with purchase_url(:id => product.id)
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
-  resources :questions
+  resources :questions do
+    collection do
+      get :share
+    end
+  end
 
    root :to => 'questions#index'
 
+
+  match "/question", :to=>"questions#question"
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
