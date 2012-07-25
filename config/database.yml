@@ -13,9 +13,9 @@ development:
   encoding: utf8
   reconnect: false
   database: exam_app
-  pool: 1
+  pool: 5
   username: root
-  password: lifang
+  password: qianjun
   host: localhost
 
 # Warning: The database defined as "test" will be erased and
@@ -26,7 +26,7 @@ test:
   encoding: utf8
   reconnect: false
   database: rrapp_season2_test
-  pool: 1
+  pool: 5
   username: root
   password: lifang
   host: localhost
