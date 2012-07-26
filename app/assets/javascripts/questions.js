@@ -5,3 +5,4 @@ function show_result() {
     }
     window.location.href = result_url;
 }
+

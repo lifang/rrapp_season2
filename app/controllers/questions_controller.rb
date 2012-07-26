@@ -4,7 +4,7 @@ class QuestionsController < ApplicationController
 
   
   def login
-    @client_id=APP_ID
+    @client_id = Constant::APP_ID
     render :layout=>false
   end
 
