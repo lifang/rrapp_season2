@@ -4,7 +4,7 @@ class QuestionsController < ApplicationController
 
   
   def index
-    @client_id="196777"
+    @client_id=APP_ID
   end
 
   

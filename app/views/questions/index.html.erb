@@ -8,7 +8,7 @@
                 display : "iframe",
                 params : {"response_type":"token","client_id":"<%= @client_id %>","scope":"publish_feed publish_share operate_like status_update"},
                 onSuccess: function(r){
-                  window.location = "http://localhost:3000/logins/get_info?access_token="+escape(r.access_token);
+                  window.location = "<%= Constant::SERVER_URL %>/logins/get_info?access_token="+escape(r.access_token);
                 }
               };
               var root_flag = 0;
@@ -19,7 +19,7 @@
           <script type="text/javascript">
             $(function(){
               setTimeout(function(){
-                window.location.href = "http://graph.renren.com/oauth/authorize?display=iframe&response_type=token&client_id=<%= @client_id %>&redirect_uri=http://localhost:3000/logins/get_callback";
+                window.location.href = "http://graph.renren.com/oauth/authorize?display=iframe&response_type=token&client_id=<%= @client_id %>&redirect_uri=<%= Constant::SERVER_URL %>/logins/get_callback";
               },1500)
             })
           </script>
