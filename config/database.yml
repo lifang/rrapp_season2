@@ -12,10 +12,10 @@ development:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: exam_app
+  database: passcet
   pool: 5
   username: root
-  password: lifang
+  password: gankao2011
   host: localhost
 
 # Warning: The database defined as "test" will be erased and
@@ -35,9 +35,9 @@ production:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: rrapp_season2_production
+  database: passcet
   pool: 5
   username: root
-  password: lifang
+  password: gankao2011
   host: localhost
 
