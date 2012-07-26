@@ -3,9 +3,9 @@
 <div class="exam">
   <div class="con_list">
     <div class="user_info">
-      <div class="user_info_img"></div>
-      <h1>王大洪</h1>
-      <span>对外贸易经济大学</span>
+      <div class="user_info_img"><img src="<%= session[:user_info]["headurl"] %>" /></div>
+      <h1><%= session[:user_info]["name"] %></h1>
+      <span><%= session[:user_info]["university_history"][0]["name"]+session[:user_info]["university_history"][0]["department"]  unless session[:user_info]["university_history"].blank?%></span>
     </div>
     <div class="user_con">
       <span>政治</span><span class="f_50" id="politics"></span><span>英语</span><span class="f_50" id="english"></span><span>数学</span><span class="f_50" id="math"></span>

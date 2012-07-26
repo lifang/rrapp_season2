@@ -15,7 +15,11 @@ development:
   database: exam_app
   pool: 5
   username: root
+<<<<<<< HEAD
   password: xuya
+=======
+  password: lifang
+>>>>>>> 42b1903bba5d7f752f95a00bee68eaa2b481a476
   host: localhost
 
 # Warning: The database defined as "test" will be erased and

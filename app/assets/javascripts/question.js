@@ -60,6 +60,7 @@ $(function(){
         return false;
     }
 
+
     $(".next_btn").bind("click",function(){      
         toggleDiv($(this),"next");
         progress();

@@ -5,7 +5,6 @@ module LoginsHelper
   require 'openssl'
 
 
-  RENREN_API_SECRET="79fb9cf508dd4751a1c3260ab57b43be"
 
   #人人主方法
   def renren_api(request)
@@ -18,7 +17,7 @@ module LoginsHelper
   def renren_sig_request(query)
     str = ""
     query.sort.each{|key,value|str<<"#{key}=#{value}"}
-    str<<RENREN_API_SECRET
+    str<<Constant::RENREN_API_SECRET
     sig = Digest::MD5.hexdigest(str)
     query[:sig]=sig
     request = Net::HTTP::Post.new("/restserver.do")
@@ -28,7 +27,7 @@ module LoginsHelper
   #
   #人人获取用户信息
   def renren_get_user(access_token)
-    query = {:access_token => access_token,:format => 'JSON',:method => 'xiaonei.users.getInfo',:v => '1.0',:field=>"uid,name,university_history,headurl"}
+    query = {:access_token => access_token,:format => 'JSON',:method => 'xiaonei.users.getInfo',:v => '1.0',:fields=>"uid,name,university_history,headurl"}
     request = renren_sig_request(query)
     response = JSON renren_api(request)
   end
