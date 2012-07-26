@@ -1,17 +1,17 @@
 var curr=null;
 function changeCss(n)
 {
-    if (n==1||n<=3) {
-        $('h1').removeClass();
-        $('h1').addClass("h_title");
-        $('h1').addClass("h_politics");
-    }
-    else if(n<6){
+    if (n==1||n<=2) {
         $('h1').removeClass();
         $('h1').addClass("h_title");
         $('h1').addClass("h_english");
     }
-    if(n>=6){
+    else if(n<5){
+        $('h1').removeClass();
+        $('h1').addClass("h_title");
+        $('h1').addClass("h_politics");
+    }
+    if(n>=5){
         $('h1').removeClass();
         $('h1').addClass("h_title");
         $('h1').addClass("h_math");
