@@ -19,18 +19,15 @@ class QuestionsController < ApplicationController
       message +=",数学 #{@score[2]}"
       @total_score = @score[0] + @score[1] + @score[2]
     end
-    sum=0
-    @score.collect! {|x| sum +=x }
-    if sum>=195 && sum <=220
+    if @total_score>=195 && @total_score <=220
       message +=",还不赖，不过还得继续努力哦"
-    elsif sum>=221 && sum <250
+    elsif @total_score>=221 && @total_score <250
       message +=",有戏！有戏！！"
-    elsif sum>=250 && sum <270
+    elsif @total_score>=250 && @total_score <270
       message +=",希望那是相当的大，O(∩_∩)O哈哈~，继续加油！！"
-    elsif sum>=270 && sum <285
+    elsif @total_score>=270 && @total_score <285
       message +=",十拿九稳咯，不过不能掉以轻心哦"
     end
-    p message
     if params[:share].to_i==1
       renren_send_message(session[:user_info]["access_token"],message)
     end
