@@ -1,9 +1,8 @@
 <%= javascript_include_tag "result" %>
-
 <div class="exam">
   <div class="con_list">
     <div class="user_info">
-      <div class="user_info_img"><img src="<%= session[:user_info]["headurl"] %>" /></div>
+      <div class="user_info_img"><img src="<%= session[:user_info]["headurl"] %>" width="100px" height="98px" /></div>
       <h1><%= session[:user_info]["name"] %></h1>
       <span><%= session[:user_info]["university_history"][0]["name"]+session[:user_info]["university_history"][0]["department"]  unless session[:user_info]["university_history"].blank?%></span>
     </div>
@@ -20,5 +19,4 @@
   <div class="con_list">
     <div class="j_btn_box"><button class="join_btn">进入考研公共主页</button></div>
   </div>
-
 </div>
