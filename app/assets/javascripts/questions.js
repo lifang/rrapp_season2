@@ -57,5 +57,3 @@ $(document).ready(function(){
         $('h1:first').removeClass().addClass("h_title h_ky");
     }
 })
-
-
