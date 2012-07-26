@@ -82,10 +82,10 @@ button {cursor: pointer; font-family:"微软雅黑";}
 .user_info_img { width: 100px; height: 98px; border: 2px #a9dbf2 solid;}
 .user_info h1 { text-align: center; padding: 5px 0;}
 
-.user_con { float: left; width: 470px; height: 135px; background: url(/assets/user_bg.jpg) no-repeat; padding: 12px 30px;}
+.user_con { float: left; width: 470px; height: 135px; background: url(/assets/user_bg.jpg) no-repeat; padding: 12px 30px; text-align: center;}
 .user_con span { font-size: 30px; padding: 0 8px;}
-.user_con span.f_50 { font-size: 50px; font-weight: bolder;}
-.user_con h1 { font-size: 38px; font-weight: bolder; text-align: center; 
+.user_con span.f_50 { font-size: 44px; font-weight: bolder;}
+.user_con h1 { font-size: 38px; font-weight: bolder; text-align: center; padding-top: 10px;
 text-shadow: 4px 0px 2px #2193d9,
 -4px 0px 2px #2193d9,
 0px 4px 2px #2193d9,
@@ -95,5 +95,5 @@ filter: Glow(Color=#2193d9, Strength=3);
 
 .yellow_h {font-size: 35px; font-weight: bolder; text-align: center; color: #fdf6c2;}
 
-.checkbox { padding-left: 220px; margin: 10px 0; line-height: 18px; color: #005EAC;}
+.checkbox { padding-left: 220px; margin: 10px 0 30px 0; line-height: 18px; color: #005EAC;}
 

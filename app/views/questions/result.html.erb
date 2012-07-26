@@ -1,5 +1,3 @@
-
-
 <div class="exam">
   <div class="con_list">
     <div class="user_info">
@@ -8,8 +6,16 @@
       <span><%= session[:user_info]["university_history"][0]["name"]+session[:user_info]["university_history"][0]["department"]  unless session[:user_info]["university_history"].blank?%></span>
     </div>
     <div class="user_con">
-      <span>政治</span><span class="f_50" id="politics"></span><span>英语</span><span class="f_50" id="english"></span><span>数学</span><span class="f_50" id="math"></span>
-      <h1 id="result"></h1>
+      <span>英语</span><span class="f_50"><%= @score[0] %></span>
+      <span>政治</span><span class="f_50"><%= @score[1] %></span>
+      <% if @is_yuwen != 1 %><span>数学</span><span class="f_50"><%= @score[2] %></span><% end %>
+      <h1 id="result">
+        <% if @total_score >= 195 and @total_score <= 220 %>还不赖，不过还得继续努力哦
+        <% elsif @total_score >= 221 and @total_score <= 250 %>有戏！有戏！！
+        <% elsif @total_score >= 251 and @total_score <= 270 %>希望那是相当的大，O(∩_∩)O哈哈~，继续加油！！
+        <% elsif @total_score >= 271 and @total_score <= 285 %>十拿九稳咯，不过不能掉以轻心哦
+        <% end %>
+      </h1>
     </div>
   </div>
 
@@ -18,7 +24,9 @@
   </div>
 
   <div class="con_list">
-    <div class="j_btn_box"><button class="join_btn">进入考研公共主页</button></div>
+    <div class="j_btn_box">
+      <button class="join_btn" onclick="javascript:window.location.href='http://page.renren.com/601411057'">进入考研公共主页</button>
+    </div>
   </div>
 
 </div>
