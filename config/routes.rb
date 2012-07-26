@@ -23,7 +23,7 @@ RrappSeason2::Application.routes.draw do
     end
   end
 
-   root :to => 'questions#index'
+   root :to => 'questions#login'
 
 
   match "/question", :to=>"questions#question"

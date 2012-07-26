@@ -3,8 +3,9 @@ class QuestionsController < ApplicationController
   include LoginsHelper
 
   
-  def index
+  def login
     @client_id=APP_ID
+    render :layout=>false
   end
 
   
