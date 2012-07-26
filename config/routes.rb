@@ -11,7 +11,7 @@ RrappSeason2::Application.routes.draw do
     end
   end
 
-  root :to => 'questions#index'
+   root :to => 'questions#login'
   match "/question", :to=>"questions#question"
   match "/result", :to=>"questions#result"
   # See how all your routes lay out with "rake routes"
