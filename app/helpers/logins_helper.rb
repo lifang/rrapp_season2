@@ -29,14 +29,14 @@ module LoginsHelper
   def renren_get_user(access_token)
     query = {:access_token => access_token,:format => 'JSON',:method => 'xiaonei.users.getInfo',:v => '1.0',:fields=>"uid,name,university_history,headurl"}
     request = renren_sig_request(query)
-    response = JSON renren_api(request)
+    return JSON renren_api(request)
   end
   #
   #人人发送新鲜事
   def renren_send_message(access_token,message)
-    query = {:access_token => "#{access_token}",:comment=>"#{message}",:format => 'JSON',:method => 'share.share',:type=>"6",:url=>"http://test.gankao.co",:v => '1.0'}
+    query = {:access_token => "#{access_token}",:comment=>"#{message}",:format => 'JSON',:method => 'share.share',:type=>"6",:url=>Constant::MAIN_URL,:v => '1.0'}
     request = renren_sig_request(query)
-    response =JSON renren_api(request)
+    return JSON renren_api(request)
   end
   #
   #END -------人人API----------

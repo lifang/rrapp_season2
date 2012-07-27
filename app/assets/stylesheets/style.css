@@ -5,7 +5,7 @@ li { list-style: none;}
 a { text-decoration: none;}
 img { border: none; display: block;}
 button {cursor: pointer; font-family:"微软雅黑";}
-.pt_100 { padding-top: 100px;}
+.pt_100 { padding-top: 140px;}
 
 .wrap { width: 800px; height: 628px; overflow: hidden; background: url(/assets/_bg.jpg) no-repeat;}
 .h_ky, .h_math, .h_english, .h_politics {width: 560px; height: 65px; overflow: hidden; text-indent: -999px; margin: 90px 0 0 170px;}
@@ -43,6 +43,8 @@ button {cursor: pointer; font-family:"微软雅黑";}
 }
 .j_btn_box { width: 356px; margin: 0 auto;}
 .join_btn {
+        display: block;
+        line-height: 78px;
 	width: 350px; 
 	height: 78px; 
 	border: 3px #1f94d9 solid; 
@@ -53,6 +55,7 @@ button {cursor: pointer; font-family:"微软雅黑";}
 	color: #134b84; 
 	text-align: center;
 	box-shadow: -2px 2px #186da0;
+        cursor: pointer;
 }
 
 .exam { width: 640px; height: 414px; overflow: hidden; padding:0 80px; margin-top: 20px; background: #124c83;}
@@ -63,6 +66,11 @@ button {cursor: pointer; font-family:"微软雅黑";}
 .q_ul li { padding-left: 35px; cursor: pointer;}
 .q_ul li:hover { text-decoration: underline;}
 .q_ul li.dui { background: url(/assets/dui.png) no-repeat 0 5px;}
+
+.q_ul_h { margin-top: 50px; line-height: 36px; font-size: 18px; color: #FFF; height: 130px; display: block; overflow: hidden;}
+.q_ul_h li { padding-left: 35px; cursor: pointer; float: left; width: 250px;}
+.q_ul_h li:hover { text-decoration: underline;}
+.q_ul_h li.dui { background: url(/assets/dui.png) no-repeat 0 5px;}
 
 .pn_btn_box { width: 400px; margin: 0 auto; overflow: hidden;}
 .prev_btn, .next_btn { padding: 5px 20px; border: 3px #ac1363 solid; border-radius: 0.5em; background: #FFF; }
@@ -95,5 +103,5 @@ filter: Glow(Color=#2193d9, Strength=3);
 
 .yellow_h {font-size: 35px; font-weight: bolder; text-align: center; color: #fdf6c2;}
 
-.checkbox { padding-left: 220px; margin: 10px 0 30px 0; line-height: 18px; color: #005EAC;}
+.checkbox { padding-left: 258px; margin: 10px 0 30px 0; line-height: 18px; color: #fff;}
 

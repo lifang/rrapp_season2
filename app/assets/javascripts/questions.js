@@ -25,8 +25,8 @@ function show_title(item) {
 
 //答题过程
 $(document).ready(function(){
-    $('.q_ul li').bind("click",function(){
-        $('.q_ul li').removeClass("dui");
+    $('li').bind("click",function(){
+        $('li').removeClass("dui");
         $(this).toggleClass("dui");
     });
     

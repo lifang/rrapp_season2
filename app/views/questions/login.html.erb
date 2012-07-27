@@ -2,13 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8"/>
-    <title>搞怪</title>
+    <title>考研分数预测</title>
     <%= javascript_include_tag "application" %>
     <%= javascript_include_tag "renren" %>
   </head>
 
   <body>
-
     <% unless params[:xn_sig_added]=="1" %>
       <script type="text/javascript" src="/assets/renren.js"></script>
       <div id="hidden_iframe" style="display:none;">
