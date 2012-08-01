@@ -5,7 +5,7 @@ li { list-style: none;}
 a { text-decoration: none;}
 img { border: none; display: block;}
 button {cursor: pointer; font-family:"微软雅黑";}
-.pt_100 { padding-top: 140px;}
+.pt_100 { padding-top: 100px;}
 
 .wrap { width: 800px; height: 628px; overflow: hidden; background: url(/assets/_bg.jpg) no-repeat;}
 .h_ky, .h_math, .h_english, .h_politics {width: 560px; height: 65px; overflow: hidden; text-indent: -999px; margin: 90px 0 0 170px;}
@@ -17,45 +17,42 @@ button {cursor: pointer; font-family:"微软雅黑";}
 .ad_1 { width: 750px; height: 100px; margin: 80px auto;}
 
 .btn_box { width: 276px; margin: 0 auto;}
-.b_btn { 
-    width: 270px; 
-	height: 78px; 
-	border: 3px #ac1462 solid; 
-	border-radius: 0.3em; 
-	background: #dc1c7e; 
-	font-size: 40px; 
-	font-weight: bolder; 
-	color: #FFF; 
+.b_btn {
+    width: 270px;
+	height: 78px;
+	border: 3px #ac1462 solid;
+	border-radius: 0.3em;
+	background: #dc1c7e;
+	font-size: 40px;
+	font-weight: bolder;
+	color: #FFF;
 	text-align: center;
 	box-shadow: -2px 2px #186da0;
 }
 .see_btn {
-	width: 270px; 
-	height: 78px; 
-	border: 3px #1f94d9 solid; 
-	border-radius: 0.3em; 
-	background: #fffbfc; 
-	font-size: 40px; 
-	font-weight: bolder; 
-	color: #134b84; 
+	width: 270px;
+	height: 78px;
+	border: 3px #1f94d9 solid;
+	border-radius: 0.3em;
+	background: #fffbfc;
+	font-size: 40px;
+	font-weight: bolder;
+	color: #134b84;
 	text-align: center;
 	box-shadow: -2px 2px #186da0;
 }
 .j_btn_box { width: 356px; margin: 0 auto;}
 .join_btn {
-        display: block;
-        line-height: 78px;
-	width: 350px; 
-	height: 78px; 
-	border: 3px #1f94d9 solid; 
-	border-radius: 0.3em; 
-	background: #fffbfc; 
-	font-size: 40px; 
-	font-weight: bolder; 
-	color: #134b84; 
+	width: 350px;
+	height: 78px;
+	border: 3px #1f94d9 solid;
+	border-radius: 0.3em;
+	background: #fffbfc;
+	font-size: 40px;
+	font-weight: bolder;
+	color: #134b84;
 	text-align: center;
 	box-shadow: -2px 2px #186da0;
-        cursor: pointer;
 }
 
 .exam { width: 640px; height: 414px; overflow: hidden; padding:0 80px; margin-top: 20px; background: #124c83;}
@@ -66,11 +63,6 @@ button {cursor: pointer; font-family:"微软雅黑";}
 .q_ul li { padding-left: 35px; cursor: pointer;}
 .q_ul li:hover { text-decoration: underline;}
 .q_ul li.dui { background: url(/assets/dui.png) no-repeat 0 5px;}
-
-.q_ul_h { margin-top: 50px; line-height: 36px; font-size: 18px; color: #FFF; height: 130px; display: block; overflow: hidden;}
-.q_ul_h li { padding-left: 35px; cursor: pointer; float: left; width: 250px;}
-.q_ul_h li:hover { text-decoration: underline;}
-.q_ul_h li.dui { background: url(/assets/dui.png) no-repeat 0 5px;}
 
 .pn_btn_box { width: 400px; margin: 0 auto; overflow: hidden;}
 .prev_btn, .next_btn { padding: 5px 20px; border: 3px #ac1363 solid; border-radius: 0.5em; background: #FFF; }
@@ -92,7 +84,7 @@ button {cursor: pointer; font-family:"微软雅黑";}
 
 .user_con { float: left; width: 470px; height: 135px; background: url(/assets/user_bg.jpg) no-repeat; padding: 12px 30px; text-align: center;}
 .user_con span { font-size: 30px; padding: 0 8px;}
-.user_con span.f_50 { font-size: 42px; font-weight: bolder;}
+.user_con span.f_50 { font-size: 44px; font-weight: bolder;}
 .user_con h1 { font-size: 38px; font-weight: bolder; text-align: center; padding-top: 10px;
 text-shadow: 4px 0px 2px #2193d9,
 -4px 0px 2px #2193d9,
@@ -103,5 +95,48 @@ filter: Glow(Color=#2193d9, Strength=3);
 
 .yellow_h {font-size: 35px; font-weight: bolder; text-align: center; color: #fdf6c2;}
 
-.checkbox { padding-left: 258px; margin: 10px 0 30px 0; line-height: 18px; color: #fff;}
+.checkbox { padding-left: 220px; margin: 10px 0 30px 0; line-height: 18px; color: #005EAC;}
 
+.ks_box { width: 720px; padding-left: 80px; height: 628px; overflow: hidden; background: #124c83; font-size: 16px;}
+.ks_box h1 { font-size: 32px; line-height: 64px; color: #FFF; margin-bottom: 20px;
+text-shadow: 4px 0px 2px #2193d9,
+-4px 0px 2px #2193d9,
+0px 4px 2px #2193d9,
+0px -4px 2px #2193d9;
+filter: Glow(Color=#2193d9, Strength=3);
+}
+.ks_q { overflow: hidden; margin: 10px 0;}
+.ks_t { line-height: 40px; color: #FDF6C2; font-size: 20px; margin-bottom: 10px;}
+.ks_ul { overflow: hidden; margin-bottom: 20px;}
+.ks_ul li { line-height: 32px; color: #FFF; float: left; width: 330px; padding-left: 30px; cursor: pointer;}
+.ks_ul li:hover { text-decoration: underline;}
+.ks_ul li.dui { background: url(/assets/dui.png) no-repeat 0 0;}
+.ck_btn {
+	width: 200px;
+	height: 40px;
+	margin: 15px 0 0 225px;
+	border: 3px #ac1462 solid;
+	border-radius: 0.3em;
+	background: #dc1c7e;
+	font-size: 20px;
+	font-weight: bolder;
+	color: #FFF;
+	text-align: center;
+	box-shadow: -2px 2px #186da0;
+}
+
+.tab { width: 500px; border-radius: 0.3em; padding: 10px; border: 3px #2193D9 solid; position: absolute; z-index: 100;background: #fff}
+.tab textarea { width: 500px; height: 100px; margin: 5px 0;}
+.qd_btn {
+	width: 100px;
+	height: 40px;
+	margin: 15px 0 0 110px;
+	border: 3px #ac1462 solid;
+	border-radius: 0.3em;
+	background: #dc1c7e;
+	font-size: 16px;
+	font-weight: bolder;
+	color: #FFF;
+	text-align: center;
+}
+.mask { width: 100%; height: 100%; background:rgba(51,51,51,0.4); position: absolute; top: 0; left: 0;}
