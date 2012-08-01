@@ -1,7 +1,5 @@
 # encoding: utf-8
 class QuestionsController < ApplicationController
-  include LoginsHelper
-
   
   def login
     @client_id = Constant::APP_ID
