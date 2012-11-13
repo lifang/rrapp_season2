@@ -7,7 +7,8 @@ RrappSeason2::Application.routes.draw do
   end
   resources :questions do
     collection do
-      get :share, :result, :question
+      get :result, :question
+      post :share
     end
   end
 

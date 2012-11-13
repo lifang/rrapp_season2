@@ -4,6 +4,7 @@ class ApplicationController < ActionController::Base
   before_filter  :set_p3p
   include Constant
   include LoginsHelper
+  
   def set_p3p
     response.headers['P3P'] = 'CP="CAO PSA OUR"'
   end

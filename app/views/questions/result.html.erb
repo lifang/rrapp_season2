@@ -1,26 +1,29 @@
 <h1 class="h_title h_ky">来预测你的考研成绩吧！</h1>
 <div class="exam">
   <div class="con_list">
-     
+    <div class="user_info">
+      <div class="user_info_img"><img src="<%= session[:user_info]["headurl"] %>" width="100px" height="98px" /></div>
+      <h1><%= session[:user_info]["name"] %></h1>
+      <span><%= session[:user_info]["university_history"][0]["name"]+session[:user_info]["university_history"][0]["department"]  unless session[:user_info]["university_history"].blank?%></span>
+    </div>
     <div class="user_con">
-      <h1>
-        <%unless @message.nil?%>
-          <%=@message%>
-        <%end%>
-      </h1>
+      <span>考研英语成绩</span><span class="f_50"><%= @score %></span>
+      <h1><%=  @message %></h1>
     </div>
   </div>
   <div class="con_list">
     <h1 class="yellow_h">以上都是纯属娱乐，想真正接受挑战吗？</h1>
   </div>
   <div class="con_list">
-    <div class="j_btn_box"><button class="join_btn">进入考研公共主页</button></div>
+    <div class="j_btn_box">
+      <a class="join_btn" href="http://page.renren.com/601411057" target="_blank">进入考研公共主页</a>
+    </div>
   </div>
 </div>
 <div class="mask"></div>
 <div class="tab">
-  <textarea id="t_result"name="" cols="" rows=""><%unless @message.nil?%><%=@message%><%end%>
-  </textarea>
-  <p><input name="" type="checkbox" value=""/> 分享到我的个人主页</p>
-  <button class="qd_btn">确定</button>
+  <textarea id="t_result" name="content" cols="" rows=""><%if @sum < 11 %> 我刚刚对自己考研英语分数进行了预测，只有<%= @score %>分呀，<% else %> 我刚刚对自己考研英语分数进行了预测，竟然是<%= @score %>分呀，<%  end %><%=  @message %>
+  </textarea><input type="hidden" id="asse_t" value="<%= session[:user_info]["access_token"] if session[:user_info] %>"/>
+  <p><input name="share" id="share" type="checkbox" value="1" checked/> 分享到我的个人主页</p>
+  <button type="button" class="qd_btn" onclick="javascript:submit_share();">确定</button>
 </div>

@@ -1,6 +1,6 @@
 #encoding: utf-8
 module Constant
-  SERVER_URL = "http://kaoyan.gankao.co"
+  SERVER_URL = "http://127.0.0.1:3000"
   MAIN_URL = "http://apps.renren.com/kaoyantgl"
 
   APP_ID="196777"
